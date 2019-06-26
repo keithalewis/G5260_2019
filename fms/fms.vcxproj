@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClInclude Include="Bell.h" />
     <ClInclude Include="cumulant.h" />
+    <ClInclude Include="stream.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="NOTES.md" />

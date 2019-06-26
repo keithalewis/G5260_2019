@@ -21,6 +21,9 @@
     <ClInclude Include="Bell.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />

@@ -18,15 +18,32 @@
     <ClInclude Include="cumulant.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Bell.h">
+    <ClInclude Include="black.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="stream.h">
+    <ClInclude Include="bell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hermite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="enumerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
     <None Include="NOTES.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="fms.t.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="enumerator.t.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

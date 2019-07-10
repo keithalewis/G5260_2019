@@ -1,7 +1,7 @@
 // test.h - simple test class
 #pragma once
 #include <functional>
-#include <iostream>
+#include <cstdio>
 
 namespace fms {
 
@@ -13,7 +13,7 @@ namespace fms {
                 f();
             }
             catch (const std::exception& ex) {
-                std::cerr << ex.what() << std::endl;
+                fputs(ex.what(), stderr);
             }
         }
     };

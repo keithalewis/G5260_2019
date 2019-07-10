@@ -25,7 +25,7 @@ namespace enumerator {
         }
         counted& operator++() 
         {
-            if (n != 0) {
+            if (operator bool()) {
                 ++i;
                 --n;
             }
@@ -54,7 +54,9 @@ namespace enumerator {
         }
         null& operator++()
         {
-            ++i;
+            if (operator bool()) {
+                ++i;
+            }
 
             return *this;
         }
@@ -80,7 +82,33 @@ namespace enumerator {
         }
         epsilon& operator++()
         {
-            ++i;
+            if (operator bool()) {
+                ++i;
+            }
+
+            return *this;
+        }
+    };
+
+    // t, t + dt, t + 2 dt, ...
+    template<class T>
+    class sequence {
+        T t, dt;
+    public:
+        sequence(T t = 0, T dt = 1)
+            : t(t), dt(dt)
+        { }
+        operator bool() const
+        {
+            return true;
+        }
+        T operator*()
+        {
+            return t;
+        }
+        sequence& operator++()
+        {
+            t += dt;
 
             return *this;
         }

@@ -148,7 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="bell.h" />
-    <ClInclude Include="black.h" />
+    <ClInclude Include="option.h" />
     <ClInclude Include="cumulant.h" />
     <ClInclude Include="test.h" />
     <ClInclude Include="hermite.h" />
@@ -159,6 +159,7 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="bell.t.cpp" />
     <ClCompile Include="enumerator.t.cpp" />
     <ClCompile Include="fms.t.cpp" />
   </ItemGroup>

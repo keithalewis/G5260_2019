@@ -1,10 +1,10 @@
-// black.h - Fischer Black model of forward value.
+// option.h - Forward value for put and call options.
 // Forward F = f exp(sX - kappa(s)) where E[X] = 0, Var(X) = 1, kappa(s) = log E[exp(sX)].
 #pragma once
 #include <cmath>
 #include <functional>
 
-namespace fms::black {
+namespace fms::option {
 
     template<class Kappa, class S = double> 
     class cumulant {

@@ -148,6 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="bell.h" />
+    <ClInclude Include="normal.h" />
     <ClInclude Include="option.h" />
     <ClInclude Include="cumulant.h" />
     <ClInclude Include="test.h" />
@@ -162,6 +163,7 @@
     <ClCompile Include="bell.t.cpp" />
     <ClCompile Include="enumerator.t.cpp" />
     <ClCompile Include="fms.t.cpp" />
+    <ClCompile Include="normal.t.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

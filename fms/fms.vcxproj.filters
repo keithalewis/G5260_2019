@@ -33,6 +33,9 @@
     <ClInclude Include="option.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="normal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
@@ -46,6 +49,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="bell.t.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="normal.t.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

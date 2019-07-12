@@ -61,3 +61,5 @@ test test_epsilon([]()
         assert(!++ci);
         assert(!++ci);
     });
+
+FMS_TEST(test_enumerator_factorial)

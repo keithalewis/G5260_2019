@@ -6,6 +6,7 @@
 namespace fms {
 
 struct normal {
+    // 1/sqrt(2 pi)
     static constexpr const double M_1_SQRT2PI = M_2_SQRTPI * M_SQRT1_2/2;
 
     template <class X = double>
@@ -16,7 +17,7 @@ struct normal {
     template <class X = double>
     static X cdf(const X& x)
     {
-        return erfc(-x / M_SQRT2) / 2;
+        return (1 + erf(x / M_SQRT2)) / 2;
     }
 };
 
